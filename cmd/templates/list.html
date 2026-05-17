@@ -1,0 +1,7 @@
+{{range .}}
+    <div class="border-b-neutral-400">
+        <strong>{{.Name}}</strong> 
+        <span>({{.Size}} bytes)</span>
+        {{if .IsDir}}[Folder]{{end}}
+    </div>
+{{end}}
